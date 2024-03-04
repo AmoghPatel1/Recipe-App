@@ -37,7 +37,12 @@ export class RecipeService {
     return this.recipes.slice(); // slice method is to duplicate the recipe array.
   }
 
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient []) {
     this.slService.addIngredients(ingredients);
   }
 }
+
